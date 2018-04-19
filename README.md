@@ -1,12 +1,21 @@
-## Welcome to GitHub Pages
+# Introdução
 
-You can use the [editor on GitHub](https://github.com/Gridya/Hello-Sigfox-via-Terminal-Serial/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Este exemplo demonstra de forma simples como acessar o modem WISOL xxx e enviar dados para o backend Sigfox com simples comandos AT.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Equipamento Necessário
 
-### Markdown
+### Hardware
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- 1 Computador PC
+  
+- 1 Kit NANOFOX com Arduino NANO
+
+### Software
+
+- Software Terminal YAT ou outro monitor Terminal
+
+
+
 
 ```markdown
 Syntax highlighted code block
