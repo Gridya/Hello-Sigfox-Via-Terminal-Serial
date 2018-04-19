@@ -2,17 +2,17 @@
 
 Este exemplo demonstra de forma simples como acessar o modem WISOL xxx e enviar dados para o backend Sigfox com simples comandos AT.
 
-## Equipamento Necessário
-
-### Hardware
+## Requisitos para completar esse tutorial
 
 - 1 Computador PC
-  
 - 1 Kit NANOFOX com Arduino NANO
+- Software Terminal YAT ou outro monitor Terminal instalado no PC
+- Acesso ao backend Sigfox
+- Estar na região de cobertura Sigfox
 
-### Software
 
-- Software Terminal YAT ou outro monitor Terminal
+# 1. Teste
+
 
 
 
