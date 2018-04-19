@@ -1,4 +1,4 @@
-# Introdução
+# Introdução (EM DESENVOLVIMENTO...)
 
 Este exemplo demonstra de forma simples como acessar o modem WISOL xxx e enviar dados para o backend Sigfox com simples comandos AT.
 
