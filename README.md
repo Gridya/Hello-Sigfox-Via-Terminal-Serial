@@ -2,6 +2,6 @@
 
 Volte em breve para o passo a passo de ativação do KiT NANOFOX IoT.
 
-![](https://imageshack.com/a/img921/5585/PfpS0o.png)
+![](https://s8.postimg.cc/56pkgt79x/sma_antena.jpg)
 
 
