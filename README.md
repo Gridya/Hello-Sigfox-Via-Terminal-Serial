@@ -2,132 +2,55 @@
 
 This page presents a step by step procedure to connect 
 
-## Step 1: 
+## Step 1: Getting Device ID and PAC of the WISOL Modem
+
+The default firmware loaded with Nanofox initialises the WISOL modem, and prints out the DEVICE ID and PAC codes every 20 seconds. PAC and DEVICE ID will be required in the next step for device activation. 
+Follow this steps to get Device ID and PAC:
+
+1.  Connect Nanofox kit in the PC via USB port. The device should be recognized as a serial Com port. 
+2.  Open a serial terminal and set communication to 9600, 1
+3.  You should see every 20 secondos the DEVICE ID and PAC printed out in your serial terminal. You can click in the Arduino Nano Reset button and watch the initialization procedure.
+3.  Take note of DEVICE ID and PAC.
 
 
+## Step 2: Kit activation in Sigfox Backend
 
+Note: In case your kit was alread activated by the manufacturer, you can skip this step and jump to step 3.
 
+Follow the Step-by-step guide:
 
+1.  Browse to https://buy.sigfox.com
+2.  Click on Activate my devkit
+3.  Pick your country
+4.  Click on Next
+5.  Enter Device ID (HEX) and PAC and click on Next
+6.  Enter account details and click on Subscribe
+7.  Your subscription is active!
 
+## Step 3: Sigfox Backend Login
 
+Before sending the first message, we will login in the Sigfox Backend and make sure our device has been registered, and that we are in the correct screen to monitor the incomming data.
+Follow this steps:
 
-You can use the [editor on GitHub](https://github.com/Gridya/teste/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+1.  Browse to http://backend.sigfox.com and login with your credentials.
+2.  Click in DEVICE on top of the screen. 
+  Now you should see a list of your devices, and you should be able to identify your Nanofox kit by the DEVICE ID
+3.  Click in the ID code of the Nanofox Kit
+4.  Click in the MESSAGE on the left menu
+  Now you should see a list of the latest messages received from your device. You are ready now to send the first message using the Nanofox kit.
+  
+  ## Step 4: Sending the first Sigfox uplink message
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Now we will send the first message througt the Sigfox network and check if it has reached backend database. 
+Follow this steps:
 
-### Markdown
+1.  Make sure your Nanofox kit is still powered up. (If you did not removed it from USB port you should be good to go!) 
+2.  In the Nanofox Board, click in the user button and monitor the serial console. You should see some messages indicating the button has been pressed and an uplink message is underway. 
+3.  Now monitor the Sigfox Backend. In a few seconds a message should pop up in the list.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Gridya/teste/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
-
-# Header 1
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
+You are now read to start experimenting with Nanofox IoT kit!
+  
+ 
 
 ### Small image
 
@@ -137,27 +60,7 @@ end
 
 ![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx8MWT1jHI4aEOd2-OQAzRDAEMEilM6Ltvyf7275fITItqHSQq)
 
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+  
 
 
 
