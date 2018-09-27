@@ -1,15 +1,26 @@
 # Tutorial for nanofox IoT KiT activation.
 
+![](https://i.postimg.cc/NjzpBQ3r/kit-editeduppp.png)
+
 This page presents a step by step procedure to activate Nanofox IoT Kit, as well as send and monitor the incomming of first message over the Sigfox Network.  
+
+Recommendations:
+- Arduino IDE Installed on the computer. https://www.arduino.cc/en/Guide/HomePage
 
 ## Step 1: Getting Device ID and PAC of the WISOL Modem
 
 The default firmware loaded with Nanofox initializes the WISOL modem, and prints out the DEVICE ID and PAC codes every 20 seconds. PAC and DEVICE ID will be required in the next step for device activation. 
 Follow this steps to get Device ID and PAC:
 
-1.  Connect Nanofox kit in the PC via USB port. The device should be recognized as a serial Com port. 
-2.  Open a serial terminal and set communication to 9600, 1
+1.  Connect Nanofox kit in the PC via USB port. The kit should be recognized as a serial device. (If you-re using windows, you can check it in the device manager)
+
+![](https://i.postimg.cc/66MHYVM0/image.png) 
+
+2.  Open a serial terminal and set communication to 9600, 8 data bits, no parity, one stop bit. (Hint: You can use Arduino IDE Serial Monitor) 
 3.  You should see every 20 seconds the DEVICE ID and PAC printed out in your serial terminal. You can click in the Arduino Nano Reset button and watch the initialization procedure.
+
+![](https://i.postimg.cc/7ZhbS4f9/image.png) 
+
 3.  Take note of DEVICE ID and PAC.
 
 
@@ -38,6 +49,8 @@ Follow this steps:
 3.  Click in the ID code of the Nanofox Kit
 4.  Click in the MESSAGE on the left menu
   Now you should see a list of the latest messages received from your device. You are ready now to send the first message using the Nanofox kit.
+
+![](https://i.postimg.cc/jSPmgwwS/image.png)  
   
   ## Step 4: Sending the first Sigfox uplink message
 
@@ -46,19 +59,17 @@ Follow this steps:
 
 1.  Make sure your Nanofox kit is still powered up. (If you did not removed it from USB port you should be good to go!) 
 2.  In the Nanofox Board, click in the user button and monitor the serial console. You should see some messages indicating the button has been pressed and an uplink message is underway. 
+
+![](https://i.postimg.cc/854jhzBy/image.png) 
+![](https://i.postimg.cc/cJmsz5gC/image.png)  
+
 3.  Now monitor the Sigfox Backend. In a few seconds a message should pop up in the list.
 
-You are now read to start experimenting with Nanofox IoT kit!
+![](https://i.postimg.cc/FHvznSWP/image.png) 
+
+Congratulations! You are now read to start experimenting with Nanofox IoT kit!
+Brownse to https://github.com/Gridya/nanofox , install our library and get started with examples.
   
- 
-
-### Small image
-
-![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkjhLm6R7bwG9y7iMMeMtIUKWINpmo8ylEEMSOtePWr9hX8Wo_zQ)
-
-### Large image
-
-![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx8MWT1jHI4aEOd2-OQAzRDAEMEilM6Ltvyf7275fITItqHSQq)
 
   
 
