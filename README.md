@@ -22,7 +22,7 @@ Follow this steps to get Device ID and PAC:
 
 ![](https://i.postimg.cc/7ZhbS4f9/image.png) 
 
-3.  Take note of DEVICE ID and PAC.
+4.  Take note of DEVICE ID and PAC.
 
 
 ## Step 2: Kit activation in Sigfox Backend
