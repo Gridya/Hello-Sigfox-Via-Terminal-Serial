@@ -1,8 +1,15 @@
-# In development...
+# Tutorial for nanofox IoT KiT activation.
 
-Tutorial for nanofox IoT KiT activation.
+This page presents a step by step procedure to connect 
 
-## Welcome to GitHub Pages
+## Step 1: 
+
+
+
+
+
+
+
 
 You can use the [editor on GitHub](https://github.com/Gridya/teste/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
