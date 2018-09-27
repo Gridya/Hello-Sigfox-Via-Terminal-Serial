@@ -14,6 +14,7 @@ Follow this steps to get Device ID and PAC:
 
 1.  Connect Nanofox kit in the PC via USB port. The kit should be recognized as a serial device. (If you-re using windows, you can check it in the device manager)
 
+![](https://i.postimg.cc/nrDmJJtp/image.png)  
 ![](https://i.postimg.cc/66MHYVM0/image.png) 
 
 2.  Open a serial terminal and set communication to 9600, 8 data bits, no parity, one stop bit. (Hint: You can use Arduino IDE Serial Monitor) 
