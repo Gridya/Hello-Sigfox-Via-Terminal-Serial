@@ -69,7 +69,7 @@ Follow this steps:
 ![](https://i.postimg.cc/FHvznSWP/image.png) 
 
 Congratulations! You are now read to start experimenting with Nanofox IoT kit!
-Brownse to https://github.com/Gridya/nanofox , install our library and get started with examples.
+Brownse to https://github.com/Gridya/nanofox , install our library and get started.
   
 
   
