@@ -12,12 +12,12 @@ Recommendations:
 The default firmware loaded with Nanofox initializes the WISOL modem, and prints out the DEVICE ID and PAC codes every 20 seconds. PAC and DEVICE ID will be required in the next step for device activation. 
 Follow this steps to get Device ID and PAC:
 
-1.  Connect Nanofox kit in the PC via USB port. The kit should be recognized as a serial device. (If you-re using windows, you can check it in the device manager. Note: COM number will vary depending on your computer)
+1.  Connect Nanofox kit in the PC via USB port. The kit should be recognized as a serial device. (If you-re using windows, you can check the device manager. Note: COM port number will vary depending on your computer)
 
 ![](https://i.postimg.cc/nrDmJJtp/image.png)  
 ![](https://i.postimg.cc/66MHYVM0/image.png) 
 
-2.  Open a serial terminal and set communication to 9600, 8 data bits, no parity, one stop bit. (Hint: You can use Arduino IDE Serial Monitor) 
+2.  Open a serial terminal and set communication to 9600 baud, 8 data bits, no parity, one stop bit. (Hint: You can use Arduino IDE Serial Monitor) 
 3.  You should see every 20 seconds the DEVICE ID and PAC printed out in your serial terminal. You can click in the Arduino Nano Reset button and watch the initialization procedure.
 
 ![](https://i.postimg.cc/7ZhbS4f9/image.png) 
